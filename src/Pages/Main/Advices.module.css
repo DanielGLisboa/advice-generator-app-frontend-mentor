@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 800;
+}
+
+.card {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr 1fr;
+  position: relative;
+  width: 650px;
+  height: 410px;
+  background-color: #323a49;
+  border-radius: 20px;
+}
+
+.changeAdvice {
+  background-image: url("../../assets/icons/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  position: absolute;
+  bottom: -8%;
+  left: 45%;
+  background-color: #2bfa93;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.changeAdvice:hover {
+  transition: 200ms;
+  box-shadow: 0px 0px 25px #2bfa93, 0px 0px 10px #2bfa93;
+}
+
+.changeAdviceDisabled {
+  background-image: url("../../assets/icons/icon-dots.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  content: "";
+  position: absolute;
+  bottom: -5%;
+  left: 47%;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  animation: blinkButton 1.5s infinite;
+}
+
+@keyframes blinkButton {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.adviceId {
+  letter-spacing: 4px;
+  align-self: center;
+  color: #2bfa93;
+}
+
+.advice {
+  font-size: 25px;
+  text-align: center;
+  color: #cee3e9;
+  width: 73%;
+  height: 150px;
+  overflow-y: auto;
+  margin: 10px 0;
+}
+
+.advice::-webkit-scrollbar {
+  width: 3px;
+  cursor: pointer;
+  background-color: #4e5d73c7;
+}
+.advice::-webkit-scrollbar-thumb {
+  background-color: #2bfa93;
+  border-radius: 2px;
+}
+
+.divider {
+  height: 50px;
+}
+
+.quotes {
+  font-size: 15px;
+  padding-bottom: 8px;
+}

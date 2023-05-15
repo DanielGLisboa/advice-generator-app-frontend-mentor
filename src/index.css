@@ -1,0 +1,9 @@
+body{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background-color: #1f2632;
+}

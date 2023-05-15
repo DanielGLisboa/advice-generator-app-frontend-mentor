@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+.searchBar {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  top: 20%;
+  width: 650px;
+  gap: 15px;
+  letter-spacing: 3px;
+  color: #545f74;
+}
+
+.searchInput {
+  position: relative;
+  width: 110px;
+  background-color: #323a49 !important;
+  border-radius: 50px !important;
+  color: #2bfa93 !important;
+  border-color: #4c586d !important ;
+}
+
+.searchBar i {
+  color: #2bfa93;
+}
+
+.enterOnlyNumber {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 206px;
+}
+
+.blinkCursor {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0px;
+  animation: writerLine 2s normal forwards steps(19),
+    blinkCursor 1000ms infinite forwards;
+}
+
+@keyframes writerLine {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 206px;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right: solid 2px #545f74;
+  }
+  to {
+    border-right: solid 2px transparent;
+  }
+}
